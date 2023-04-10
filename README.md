@@ -1,10 +1,21 @@
-# New File
+# This a readme generator
 
-## this is practice run
+## Description
 
-## MIT
+Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-# idk 
+What was your motivation
+Good grade
+Why did you build this project?
+homework assignment
+What problem does it solve?
+my grades
+What did you learn?
+node 
 
-## idk 
+# MIT
+
+# (https://github.com/bocabooii)
+
+# alexisbocanegra14@gmail.com
 

@@ -4,16 +4,27 @@ const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown')
 
 // TODO: Create an array of questions for user input
-const generateREADME = ({title, description, license, github, email}) => 
+const generateREADME = ({title, descriptionOne, descriptionTwo, descriptionThree, descriptionFour, license, github, email}) => 
 `# ${title}
 
-## ${description}
+## Description
 
-## ${license}
+Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-# ${github}
+What was your motivation
+${descriptionOne}
+Why did you build this project?
+${descriptionTwo}
+What problem does it solve?
+${descriptionThree}
+What did you learn?
+${descriptionFour}
 
-## ${email}
+# ${license}
+
+# (${github})
+
+# ${email}
 
 `
 
@@ -26,8 +37,23 @@ inquirer
     },
     {
         type: 'input',
-        message: 'What is the description of your repo?',
-        name: 'description'
+        message: 'Provide a short description using these prepromted questions. What was your motivation?',
+        name: 'descriptionOne'
+      },
+      {
+        type: 'input',
+        message: 'Why did you build this project?',
+        name: 'descriptionTwo'
+      },
+      {
+        type: 'input',
+        message: 'What problem does it solve?',
+        name: 'descriptionThree'
+      },
+      {
+        type: 'input',
+        message: 'What did you learn?',
+        name: 'descriptionFour'
       },
       {
         type: 'input',
