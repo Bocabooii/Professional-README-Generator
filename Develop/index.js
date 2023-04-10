@@ -47,7 +47,7 @@ inquirer
 ])
 .then((answer) => {
     const index = generateREADME(answer)
-     fs.writeFile("README.md", index, (err) =>
+     fs.writeFile("../README.md", index, (err) =>
      err ? console.log(err) : console.log('Success!'))
    });
 // TODO: Create a function to write README file
