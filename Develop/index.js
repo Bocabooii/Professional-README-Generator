@@ -11,20 +11,20 @@ const generateREADME = ({title, descriptionOne, descriptionTwo, descriptionThree
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-What was your motivation
+-What was your motivation
 ${descriptionOne}
-Why did you build this project?
+-Why did you build this project?
 ${descriptionTwo}
-What problem does it solve?
+-What problem does it solve?
 ${descriptionThree}
-What did you learn?
+-What did you learn?
 ${descriptionFour}
 
-# ${license}
+## ${license}
 
-# (${github})
+## (${github})
 
-# ${email}
+## ${email}
 
 `
 
@@ -73,7 +73,7 @@ inquirer
 ])
 .then((answer) => {
     const index = generateREADME(answer)
-     fs.writeFile("../README.md", index, (err) =>
+     fs.writeFile("./README.md", index, (err) =>
      err ? console.log(err) : console.log('Success!'))
    });
 // TODO: Create a function to write README file
